@@ -47,8 +47,11 @@ export function WelcomeGate({ onEnter }: WelcomeGateProps) {
           </h1>
         </div>
 
-        <p className="mt-2 sm:mt-4 font-display text-sm sm:text-xl italic tracking-wider text-burgundy/85">
-          Wedding Invitation
+        <p className="mt-2 sm:mt-3 font-display text-[0.80rem] sm:text-base italic font-normal tracking-wider text-gold-deep">
+          Capturing Love, Creating Memories
+        </p>
+        <p className="mt-0.5 sm:mt-1 font-body text-[0.62rem] sm:text-xs uppercase tracking-[0.22em] text-dusty-rose font-normal">
+          By <strong className="font-bold text-burgundy">SP EDITX WEDDING.</strong>
         </p>
 
         <GoldDivider className="mt-3 sm:mt-6" />

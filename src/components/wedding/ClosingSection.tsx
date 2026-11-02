@@ -52,8 +52,8 @@ export function ClosingSection() {
           </div>
 
           <footer className="mt-16 border-t border-gold/30 pt-8 pb-12 sm:pb-6">
-            <p className="font-body text-[0.70rem] sm:text-xs font-semibold tracking-wider text-burgundy">
-              Capturing Love, Creating Memories — By SP EDITX WEDDING.
+            <p className="font-body text-[0.70rem] sm:text-xs font-normal tracking-wider text-burgundy">
+              Capturing Love, Creating Memories — By <strong className="font-bold">SP EDITX WEDDING.</strong>
             </p>
             <p className="mt-2 font-body text-[0.60rem] font-medium uppercase tracking-[0.35em] text-dusty-rose">
               Made With Love · Muzaffarpur, Bihar
