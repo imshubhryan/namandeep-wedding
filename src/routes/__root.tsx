@@ -88,17 +88,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Together with our families, we invite you to celebrate the wedding of Namandeep and Parminder.",
+          "Together with our families, we invite you to celebrate the wedding of Namandeep and Parminder — 21 November 2026, Muzaffarpur.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://namandeepparminderwedding.vercel.app/" },
+      { property: "og:image", content: "https://namandeepparminderwedding.vercel.app/images/laptop.png" },
+      { property: "og:image:secure_url", content: "https://namandeepparminderwedding.vercel.app/images/laptop.png" },
+      { property: "og:image:type", content: "image/png" },
+      { property: "og:image:width", content: "1920" },
+      { property: "og:image:height", content: "1080" },
+      { property: "og:image:alt", content: "Namandeep Weds Parminder — Wedding Invitation" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Namandeep Weds Parminder — Wedding Invitation" },
+      {
+        name: "twitter:description",
+        content:
+          "Together with our families, we invite you to celebrate the wedding of Namandeep and Parminder — 21 November 2026, Muzaffarpur.",
+      },
+      { name: "twitter:image", content: "https://namandeepparminderwedding.vercel.app/images/laptop.png" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "apple-touch-icon", href: "/images/mobile.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
