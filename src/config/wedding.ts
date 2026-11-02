@@ -21,7 +21,7 @@ export const wedding = {
   countdownMessage: "A new chapter, woven with two hearts and the blessings of family.",
 
   blessings: {
-    heavenly: "With the Heavenly blessings of Gurupurab",
+    heavenly: "With the Heavenly blessings of Grandparents",
     grandparents: "Sdn. Sant Kaur & Late Sdr. Hari Singh Jawa",
     honouredLine:
       "We feel privileged and honoured to have your gracious presence on the auspicious occasion of",
