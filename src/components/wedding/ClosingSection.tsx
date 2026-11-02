@@ -43,7 +43,7 @@ export function ClosingSection() {
           </p>
 
           <div className="mt-16">
-            <h2 className="font-script text-6xl leading-tight text-burgundy sm:text-7xl">
+            <h2 className="font-script text-4xl leading-tight text-burgundy sm:text-6xl md:text-7xl">
               Namandeep &amp; Parminder
             </h2>
             <p className="mt-6 font-display text-2xl font-medium tracking-[0.12em] text-gold-deep sm:text-3xl">
@@ -51,9 +51,14 @@ export function ClosingSection() {
             </p>
           </div>
 
-          <p className="mt-16 font-body text-[0.62rem] font-bold uppercase tracking-[0.45em] text-dusty-rose">
-            Made With Love · Muzaffarpur, Bihar
-          </p>
+          <footer className="mt-16 border-t border-gold/30 pt-8 pb-12 sm:pb-6">
+            <p className="font-body text-[0.70rem] sm:text-xs font-semibold tracking-wider text-burgundy">
+              Capturing Love, Creating Memories — By SP EDITX WEDDING.
+            </p>
+            <p className="mt-2 font-body text-[0.60rem] font-medium uppercase tracking-[0.35em] text-dusty-rose">
+              Made With Love · Muzaffarpur, Bihar
+            </p>
+          </footer>
         </div>
       </section>
     </>

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { OpeningInvitation } from "@/components/wedding/OpeningInvitation";
 import { ScratchDateCard } from "@/components/wedding/ScratchDateCard";
 import { CountdownSection } from "@/components/wedding/CountdownSection";
@@ -10,6 +11,8 @@ import { PhotoCarousel } from "@/components/wedding/PhotoCarousel";
 import { Venues } from "@/components/wedding/Venues";
 import { RsvpSection } from "@/components/wedding/RsvpSection";
 import { ClosingSection } from "@/components/wedding/ClosingSection";
+import { MusicPlayer } from "@/components/wedding/MusicPlayer";
+import { WelcomeGate } from "@/components/wedding/WelcomeGate";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,19 +37,35 @@ export const Route = createFileRoute("/")({
 });
 
 function WeddingInvitationPage() {
+  const [entered, setEntered] = useState(false);
+  const { startMusic, MusicPlayerUI } = MusicPlayer();
+
+  const handleEnter = () => {
+    startMusic(); // Starts music on user click — guaranteed user gesture
+    setEntered(true);
+  };
+
   return (
-    <main className="min-h-screen bg-background">
-      <OpeningInvitation />
-      <ScratchDateCard />
-      <CountdownSection />
-      <FamilyBlessings />
-      <Festivities />
-      <WeddingCeremony />
-      <AnandKaraj />
-      <PhotoCarousel />
-      <Venues />
-      <RsvpSection />
-      <ClosingSection />
-    </main>
+    <>
+      {/* Audio element + floating pause/play button */}
+      {MusicPlayerUI}
+
+      {/* Welcome Gate — shown until user clicks "Open Invitation" */}
+      {!entered && <WelcomeGate onEnter={handleEnter} />}
+
+      <main className="min-h-screen bg-background overflow-x-hidden">
+        <OpeningInvitation isVisible={entered} />
+        <ScratchDateCard />
+        <CountdownSection />
+        <FamilyBlessings />
+        <Festivities />
+        <WeddingCeremony />
+        <AnandKaraj />
+        <PhotoCarousel />
+        <Venues />
+        <RsvpSection />
+        <ClosingSection />
+      </main>
+    </>
   );
 }

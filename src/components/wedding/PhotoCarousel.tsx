@@ -2,24 +2,18 @@ import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { EyebrowLabel, GoldDivider } from "./Ornaments";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/event-ring.jpg";
-import gallery4 from "@/assets/gallery-1.jpg";
-import gallery5 from "@/assets/gallery-2.jpg";
-import gallery6 from "@/assets/event-haldi.jpg";
 
 /**
- * Replaceable placeholder imagery — the families' own photographs can be
- * dropped into src/assets and listed here once supplied.
+ * Real wedding photographs from the family's collection.
+ * All images are served from public/images/.
  */
 const PHOTOS = [
-  { src: gallery1, caption: "Forever begins with a promise" },
-  { src: gallery2, caption: "Mehandi, drawn with love" },
-  { src: gallery3, caption: "Two rings, one journey" },
-  { src: gallery4, caption: "Blossoms of celebration" },
-  { src: gallery5, caption: "Adorned with blessings" },
-  { src: gallery6, caption: "Golden hours of joy" },
+  { src: "/images/a.jpeg", caption: "Forever begins with a promise" },
+  { src: "/images/b.jpeg", caption: "Moments to cherish forever" },
+  { src: "/images/c.jpeg", caption: "Two hearts, one journey" },
+  { src: "/images/d.jpeg", caption: "Adorned with love & blessings" },
+  { src: "/images/e.jpeg", caption: "Mehandi, drawn with love" },
+  { src: "/images/f.jpeg", caption: "A story written in the stars" },
 ];
 
 /** Section 8 — premium photo carousel with lightbox. */

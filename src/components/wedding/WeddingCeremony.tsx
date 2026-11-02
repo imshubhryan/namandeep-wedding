@@ -1,5 +1,4 @@
 import { wedding } from "@/config/wedding";
-import baraatImg from "@/assets/event-baraat.jpg";
 import { EyebrowLabel, FloatingPetals, GoldDivider } from "./Ornaments";
 
 /** Section 6 — the main ceremony: immersive Baraat celebration. */
@@ -12,12 +11,10 @@ export function WeddingCeremony() {
       {/* Immersive background */}
       <div className="absolute inset-0" aria-hidden="true">
         <img
-          src={baraatImg}
-          alt=""
+          src="/images/wed.png"
+          alt="Wedding Ceremony & Baraat"
           loading="lazy"
-          width={1920}
-          height={1088}
-          className="ken-burns h-full w-full object-cover"
+          className="ken-burns h-full w-full object-cover object-center"
         />
         <div className="warm-overlay absolute inset-0" />
       </div>
@@ -28,7 +25,7 @@ export function WeddingCeremony() {
         <h2 className="mt-4 font-body text-[0.72rem] font-bold uppercase tracking-[0.5em] text-ivory/90">
           {c.heading}
         </h2>
-        <p className="mt-6 font-script text-6xl leading-tight text-ivory drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] sm:text-8xl">
+        <p className="mt-4 sm:mt-6 font-script text-4xl leading-tight text-ivory drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] sm:text-6xl md:text-8xl">
           Namandeep &amp; Parminder
         </p>
         <GoldDivider className="mt-8" />

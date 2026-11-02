@@ -46,9 +46,9 @@
   --color-burgundy: var(--burgundy);
   --color-cream: var(--cream);
   /* Typography */
-  --font-script: "Great Vibes", cursive;
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Alex Brush", cursive;
+  --font-display: "Playfair Display", "Cinzel", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   /* Motion */
   --animate-petal-fall: petal-fall 14s linear infinite;
   --animate-gentle-float: gentle-float 5s ease-in-out infinite;
@@ -58,57 +58,57 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.982 0.012 75);
-  --foreground: oklch(0.38 0.085 350);
-  --card: oklch(0.975 0.014 75);
-  --card-foreground: oklch(0.38 0.085 350);
-  --popover: oklch(0.982 0.012 75);
-  --popover-foreground: oklch(0.38 0.085 350);
-  --primary: oklch(0.38 0.085 350);
-  --primary-foreground: oklch(0.982 0.012 75);
-  --secondary: oklch(0.86 0.045 356);
-  --secondary-foreground: oklch(0.38 0.085 350);
-  --muted: oklch(0.955 0.018 75);
-  --muted-foreground: oklch(0.54 0.055 355);
-  --accent: oklch(0.86 0.045 356);
-  --accent-foreground: oklch(0.38 0.085 350);
+  --background: oklch(0.985 0.010 75);
+  --foreground: oklch(0.25 0.05 350);
+  --card: oklch(0.980 0.012 75);
+  --card-foreground: oklch(0.25 0.05 350);
+  --popover: oklch(0.985 0.010 75);
+  --popover-foreground: oklch(0.25 0.05 350);
+  --primary: oklch(0.30 0.12 350);
+  --primary-foreground: oklch(0.985 0.010 75);
+  --secondary: oklch(0.88 0.04 356);
+  --secondary-foreground: oklch(0.30 0.12 350);
+  --muted: oklch(0.96 0.015 75);
+  --muted-foreground: oklch(0.40 0.06 355);
+  --accent: oklch(0.88 0.04 356);
+  --accent-foreground: oklch(0.30 0.12 350);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.982 0.012 75);
-  --border: oklch(0.87 0.05 80);
-  --input: oklch(0.87 0.05 80);
-  --ring: oklch(0.66 0.105 358);
+  --destructive-foreground: oklch(0.985 0.010 75);
+  --border: oklch(0.82 0.05 80);
+  --input: oklch(0.82 0.05 80);
+  --ring: oklch(0.50 0.12 358);
   /* Wedding palette */
-  --blush: oklch(0.86 0.045 356);
-  --rose: oklch(0.79 0.075 2);
-  --dusty-rose: oklch(0.66 0.105 358);
-  --ivory: oklch(0.982 0.012 75);
-  --gold: oklch(0.8 0.085 85);
-  --gold-deep: oklch(0.68 0.095 80);
-  --burgundy: oklch(0.38 0.085 350);
-  --cream: oklch(0.955 0.018 75);
+  --blush: oklch(0.88 0.04 356);
+  --rose: oklch(0.75 0.08 2);
+  --dusty-rose: oklch(0.48 0.12 358);
+  --ivory: oklch(0.985 0.010 75);
+  --gold: oklch(0.70 0.12 82);
+  --gold-deep: oklch(0.48 0.13 75);
+  --burgundy: oklch(0.28 0.12 350);
+  --cream: oklch(0.96 0.015 75);
 }
 
 .dark {
   /* The invitation is a light experience; dark mode keeps the same palette. */
-  --background: oklch(0.982 0.012 75);
-  --foreground: oklch(0.38 0.085 350);
-  --card: oklch(0.975 0.014 75);
-  --card-foreground: oklch(0.38 0.085 350);
-  --popover: oklch(0.982 0.012 75);
-  --popover-foreground: oklch(0.38 0.085 350);
-  --primary: oklch(0.38 0.085 350);
-  --primary-foreground: oklch(0.982 0.012 75);
-  --secondary: oklch(0.86 0.045 356);
-  --secondary-foreground: oklch(0.38 0.085 350);
-  --muted: oklch(0.955 0.018 75);
-  --muted-foreground: oklch(0.54 0.055 355);
-  --accent: oklch(0.86 0.045 356);
-  --accent-foreground: oklch(0.38 0.085 350);
+  --background: oklch(0.985 0.010 75);
+  --foreground: oklch(0.25 0.05 350);
+  --card: oklch(0.980 0.012 75);
+  --card-foreground: oklch(0.25 0.05 350);
+  --popover: oklch(0.985 0.010 75);
+  --popover-foreground: oklch(0.25 0.05 350);
+  --primary: oklch(0.30 0.12 350);
+  --primary-foreground: oklch(0.985 0.010 75);
+  --secondary: oklch(0.88 0.04 356);
+  --secondary-foreground: oklch(0.30 0.12 350);
+  --muted: oklch(0.96 0.015 75);
+  --muted-foreground: oklch(0.40 0.06 355);
+  --accent: oklch(0.88 0.04 356);
+  --accent-foreground: oklch(0.30 0.12 350);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.982 0.012 75);
-  --border: oklch(0.87 0.05 80);
-  --input: oklch(0.87 0.05 80);
-  --ring: oklch(0.66 0.105 358);
+  --destructive-foreground: oklch(0.985 0.010 75);
+  --border: oklch(0.82 0.05 80);
+  --input: oklch(0.82 0.05 80);
+  --ring: oklch(0.50 0.12 358);
 }
 
 @layer base {
@@ -123,14 +123,6 @@
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
     }
   }
 

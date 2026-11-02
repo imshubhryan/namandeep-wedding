@@ -12,14 +12,14 @@ const UNITS = [
 
 function Unit({ value, label }: { value: number; label: string }) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center min-w-[3.8rem] sm:min-w-[5rem]">
       <span
         key={value}
-        className="animate-in fade-in zoom-in-95 duration-500 font-display text-5xl font-semibold tabular-nums text-burgundy sm:text-7xl"
+        className="font-display text-3xl font-semibold tabular-nums text-burgundy sm:text-5xl md:text-7xl"
       >
         {String(value).padStart(2, "0")}
       </span>
-      <span className="mt-3 font-body text-[0.6rem] font-bold uppercase tracking-[0.35em] text-dusty-rose sm:text-xs">
+      <span className="mt-1.5 font-body text-[0.55rem] font-bold uppercase tracking-[0.25em] text-dusty-rose sm:text-xs">
         {label}
       </span>
     </div>
@@ -65,9 +65,9 @@ export function CountdownSection() {
         </p>
 
         {time && !time.passed ? (
-          <div className="mt-14 flex items-start justify-center gap-3 sm:gap-6" role="timer" aria-live="off">
+          <div className="mt-10 sm:mt-14 flex items-start justify-center gap-1.5 sm:gap-6" role="timer" aria-live="off">
             {UNITS.map((u, i) => (
-              <div key={u.key} className="flex items-start gap-3 sm:gap-6">
+              <div key={u.key} className="flex items-start gap-1.5 sm:gap-6">
                 <Unit value={time[u.key]} label={u.label} />
                 {i < UNITS.length - 1 && <ThinGoldSeparator />}
               </div>
