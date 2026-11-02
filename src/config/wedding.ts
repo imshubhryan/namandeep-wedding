@@ -27,7 +27,7 @@ export const wedding = {
       "We feel privileged and honoured to have your gracious presence on the auspicious occasion of",
     parents: "Sdn. Gurmeet Kaur & Sdr. Jagjit Singh Jawa",
     sonLine: "The Wedding Ceremony of their beloved son",
-    brideParents: "(D/o Sdn. Rani Kaur & Late Sdr. Shivram Singh)",
+    brideParents: "(D/o Sdn. Rani Kaur & Late Sdr. Sharvan Singh)",
   },
 
   festivities: {
